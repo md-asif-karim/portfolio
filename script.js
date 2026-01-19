@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 // In real use, connect to email service here
                 console.log('Contact Form Data:', formData);
-                console.log('This would send email to: your.email@example.com');
+                console.log('This would send email to: mdasifkarim28th@gmail.com');
                 
                 // Show success
                 showMessage('Message sent successfully! I will respond soon.', 'success');
@@ -71,4 +71,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
 });
