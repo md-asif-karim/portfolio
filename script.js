@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // ✅ REAL EMAIL SENDING USING EMAILJS
             emailjs.send(
-                "YOUR_SERVICE_ID",
-                "YOUR_TEMPLATE_ID",
+                "service_jer260t",
+                "template_5ozf4gp",
                 {
                     name: formData.name,
                     email: formData.email,
@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
 
 
 
