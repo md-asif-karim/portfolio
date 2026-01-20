@@ -92,10 +92,10 @@ nav a:hover {
 }
 
 .hero h2 {
-    position: absolute;
-    color: #ecf0f1;    
-    font-size: 2rem;
-    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
 
 .hero p {
@@ -517,6 +517,7 @@ footer {
         font-size: 2rem;
     }
 }
+
 
 
 
