@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formMessage.textContent = text;
         formMessage.style.color = type === 'success' ? '#2ecc71' : '#e74c3c';
         formMessage.style.backgroundColor = type === 'success' ? 'rgba(46, 204, 113, 0.1)' : 'rgba(231, 76, 60, 0.1)';
-        formMessage.style.border = `1px solid ${type === 'success' ? '#2ecc71' : '#e74c3c'}`;
+        formMessage.style.border = 1px solid ${type === 'success' ? '#2ecc71' : '#e74c3c'};
 
         // Auto hide message after 5 seconds
         setTimeout(() => {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Add delay animations for children
                     const children = entry.target.querySelectorAll('.animate-text, .animate-badge, .animate-card');
                     children.forEach((child, index) => {
-                        child.style.animationDelay = `${index * 0.2}s`;
+                        child.style.animationDelay = ${index * 0.2}s;
                         child.classList.add('animate__animated', 'animate__fadeInUp');
                     });
                 }
@@ -275,27 +275,28 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize particles
     addFloatingParticles();
 
-    // Add typing effect to hero title
-    function initTypingEffect() {
-        const heroTitle = document.querySelector('.hero h1');
-        if (!heroTitle) return;
-        
-        const text = 'IT Executive';
-        let index = 0;
-        
-        // Clear existing text
-        heroTitle.textContent = '';
-        
-        function typeWriter() {
-            if (index < text.length) {
-                heroTitle.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, 100);
-            }
+// Add typing effect to hero title
+function initTypingEffect() {
+    const heroTitle = document.querySelector('.hero h1');
+    if (!heroTitle) return;
+    
+    // Save original text
+    const originalText = heroTitle.textContent || 'IT Executive';
+    let index = 0;
+    
+    // Clear existing text
+    heroTitle.textContent = '';
+    
+    function typeWriter() {
+        if (index < originalText.length) {
+            heroTitle.textContent += originalText.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);
         }
-        
     }
-
-    // Start typing effect
+    
+    // Start typing
+    typeWriter();
+}    // Start typing effect
     setTimeout(initTypingEffect, 1000);
 });
