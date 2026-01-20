@@ -245,7 +245,7 @@ nav a:hover {
     background: linear-gradient(45deg, #fff, #3498db);
     -webkit-background-clip: text;
     background-clip: text;
-    color: white;
+    color: transparent;
 }
 
 .hero h2 {
@@ -895,4 +895,3 @@ footer {
         padding: 20px;
     }
 }
-
