@@ -7,82 +7,92 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Asif Karim </title>
+    <title>Md. Asif Karim - IT Executive</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="header-animate">
         <div class="container">
             <div class="logo">
                 <i class="fas fa-server"></i>
-                <span></a>Md. Asif Karim</span>
+                <span>Md. Asif Karim</span>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>IT Executive</h1>
-                <h2>Mehnaz Styles & Craft Ltd.</h2>
-                <p>Specializing in Hardware, Server Management & IT Infrastructure for Garment Manufacturing</p>
+            <div class="hero-content animate-on-scroll">
+                <h1 class="animate-text">IT Executive</h1>
+                <h2 class="animate-text" style="animation-delay: 0.2s">Mehnaz Styles & Craft Ltd.</h2>
+                <p class="animate-text" style="animation-delay: 0.4s">Specializing in Hardware, Server Management & IT Infrastructure for Garment Manufacturing</p>
                 <div class="hero-badges">
-                    <span class="badge"><i class="fas fa-microchip"></i> Hardware</span>
-                    <span class="badge"><i class="fas fa-server"></i> Servers</span>
-                    <span class="badge"><i class="fas fa-tools"></i> IT Support</span>
+                    <span class="badge animate-badge" style="animation-delay: 0.6s"><i class="fas fa-microchip"></i> Hardware</span>
+                    <span class="badge animate-badge" style="animation-delay: 0.8s"><i class="fas fa-server"></i> Servers</span>
+                    <span class="badge animate-badge" style="animation-delay: 1s"><i class="fas fa-tools"></i> IT Support</span>
                 </div>
-                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#contact" class="btn pulse-animate" style="animation-delay: 1.2s">Hire Me</a>
             </div>
-            <div class="hero-image">
-    <div class="profile-container">
-        <img src="images\profile.jpeg" alt="Md. Asif Karim - IT Executive" class="profile-img">
-        <div class="profile-badge hardware">
-            <i class="fas fa-microchip"></i>
-        </div>
-        <div class="profile-badge server">
-            <i class="fas fa-server"></i>
-        </div>
-        <div class="profile-badge tech">
-            <i class="fas fa-tools"></i>
-        </div>
-    </div>
-</div>
+            <div class="hero-image animate-on-scroll">
+                <div class="profile-container">
+                    <img src="images\profile.jpeg" alt="Md. Asif Karim - IT Executive" class="profile-img">
+                    <div class="profile-badge hardware float-animation">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="profile-badge server float-animation" style="animation-delay: 0.5s">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="profile-badge tech float-animation" style="animation-delay: 1s">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text animate-on-scroll">
                     <p>I work as an IT Executive at Mehnaz Styles & Craft Ltd., managing the complete IT infrastructure for garment manufacturing operations. My role involves maintaining hardware, servers, and ensuring smooth IT operations across production units.</p>
                     
                     <div class="about-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-industry"></i>
+                        <div class="highlight animate-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
                             <h4>Garment Industry IT</h4>
                             <p>Specialized in apparel manufacturing IT needs</p>
                         </div>
-                        <div class="highlight">
-                            <i class="fas fa-shield-alt"></i>
+                        <div class="highlight animate-card" style="animation-delay: 0.2s">
+                            <div class="highlight-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
                             <h4>Infrastructure Security</h4>
                             <p>Secure IT systems for business operations</p>
                         </div>
-                        <div class="highlight">
-                            <i class="fas fa-cogs"></i>
+                        <div class="highlight animate-card" style="animation-delay: 0.4s">
+                            <div class="highlight-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
                             <h4>Technical Support</h4>
                             <p>24/7 support for production systems</p>
                         </div>
@@ -95,47 +105,47 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-container">
-                <div class="skill-box">
+                <div class="skill-box animate-card">
                     <div class="skill-icon">
                         <i class="fas fa-microchip"></i>
                     </div>
                     <h3>Hardware Management</h3>
                     <ul>
-                        <li>Computer Assembly & Repair</li>
-                        <li>Printer/Scanner Maintenance</li>
-                        <li>Network Devices Setup</li>
-                        <li>CCTV Systems Installation</li>
-                        <li>Biometric Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Computer Assembly & Repair</li>
+                        <li><i class="fas fa-check-circle"></i> Printer/Scanner Maintenance</li>
+                        <li><i class="fas fa-check-circle"></i> Network Devices Setup</li>
+                        <li><i class="fas fa-check-circle"></i> CCTV Systems Installation</li>
+                        <li><i class="fas fa-check-circle"></i> Biometric Systems</li>
                     </ul>
                 </div>
                 
-                <div class="skill-box">
+                <div class="skill-box animate-card" style="animation-delay: 0.2s">
                     <div class="skill-icon">
                         <i class="fas fa-server"></i>
                     </div>
                     <h3>Server Administration</h3>
                     <ul>
-                        <li>Windows Server Management</li>
-                        <li>File Server Configuration</li>
-                        <li>Active Directory</li>
-                        <li>Backup & Recovery</li>
-                        <li>Virtualization</li>
+                        <li><i class="fas fa-check-circle"></i> Windows Server Management</li>
+                        <li><i class="fas fa-check-circle"></i> File Server Configuration</li>
+                        <li><i class="fas fa-check-circle"></i> Active Directory</li>
+                        <li><i class="fas fa-check-circle"></i> Backup & Recovery</li>
+                        <li><i class="fas fa-check-circle"></i> Virtualization</li>
                     </ul>
                 </div>
                 
-                <div class="skill-box">
+                <div class="skill-box animate-card" style="animation-delay: 0.4s">
                     <div class="skill-icon">
                         <i class="fas fa-tools"></i>
                     </div>
                     <h3>IT Support</h3>
                     <ul>
-                        <li>Technical Troubleshooting</li>
-                        <li>Software Installation</li>
-                        <li>Network Maintenance</li>
-                        <li>Email Configuration</li>
-                        <li>User Training</li>
+                        <li><i class="fas fa-check-circle"></i> Technical Troubleshooting</li>
+                        <li><i class="fas fa-check-circle"></i> Software Installation</li>
+                        <li><i class="fas fa-check-circle"></i> Network Maintenance</li>
+                        <li><i class="fas fa-check-circle"></i> Email Configuration</li>
+                        <li><i class="fas fa-check-circle"></i> User Training</li>
                     </ul>
                 </div>
             </div>
@@ -145,8 +155,8 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-item animate-card">
                 <div class="exp-header">
                     <h3>IT Executive</h3>
                     <span class="company">Mehnaz Styles & Craft Ltd.</span>
@@ -155,19 +165,19 @@
                 <div class="exp-content">
                     <h4>Responsibilities:</h4>
                     <ul>
-                        <li>Manage complete IT infrastructure for garment manufacturing unit</li>
-                        <li>Maintain servers and network systems for production</li>
-                        <li>Provide hardware support for 100+ computers and devices</li>
-                        <li>Implement and maintain ERP system for inventory</li>
-                        <li>Setup and maintain CCTV surveillance systems</li>
-                        <li>Provide technical training to staff</li>
+                        <li><i class="fas fa-caret-right"></i> Manage complete IT infrastructure for garment manufacturing unit</li>
+                        <li><i class="fas fa-caret-right"></i> Maintain servers and network systems for production</li>
+                        <li><i class="fas fa-caret-right"></i> Provide hardware support for 100+ computers and devices</li>
+                        <li><i class="fas fa-caret-right"></i> Implement and maintain ERP system for inventory</li>
+                        <li><i class="fas fa-caret-right"></i> Setup and maintain CCTV surveillance systems</li>
+                        <li><i class="fas fa-caret-right"></i> Provide technical training to staff</li>
                     </ul>
                     
                     <h4>Key Achievements:</h4>
                     <ul>
-                        <li>Reduced system downtime by 40%</li>
-                        <li>Implemented backup system for critical data</li>
-                        <li>Setup secure network for production unit</li>
+                        <li><i class="fas fa-star"></i> Reduced system downtime by 40%</li>
+                        <li><i class="fas fa-star"></i> Implemented backup system for critical data</li>
+                        <li><i class="fas fa-star"></i> Setup secure network for production unit</li>
                     </ul>
                 </div>
             </div>
@@ -177,11 +187,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Available for IT consulting, technical support, and infrastructure projects</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Available for IT consulting, technical support, and infrastructure projects</p>
             
             <div class="contact-wrapper">
-                <div class="contact-info">
+                <div class="contact-info animate-card">
                     <h3><i class="fas fa-address-card"></i> Contact Details</h3>
                     <div class="info-item">
                         <i class="fas fa-briefcase"></i>
@@ -213,7 +223,7 @@
                     </div>
                 </div>
                 
-                <div class="contact-form">
+                <div class="contact-form animate-card" style="animation-delay: 0.2s">
                     <h3><i class="fas fa-paper-plane"></i> Send Message</h3>
                     <form id="contactForm">
                         <div class="form-group">
@@ -238,24 +248,24 @@
         </div>
     </section>
 
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2026 By Md. Asif Karim. IT Executive - Menhaz Styles & Craft Ltd.</p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/asif-karim-5979531b0"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/asif.karim.9615/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.mdasifkarim28th@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="+8801744503093"><i class="fas fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/asif-karim-5979531b0" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/asif.karim.9615/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:mdasifkarim28th@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+8801744503093"><i class="fas fa-phone"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
