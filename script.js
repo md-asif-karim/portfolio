@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formMessage.textContent = text;
         formMessage.style.color = type === 'success' ? '#2ecc71' : '#e74c3c';
         formMessage.style.backgroundColor = type === 'success' ? 'rgba(46, 204, 113, 0.1)' : 'rgba(231, 76, 60, 0.1)';
-        formMessage.style.border = 1px solid ${type === 'success' ? '#2ecc71' : '#e74c3c'};
+        formMessage.style.border = `1px solid ${type === 'success' ? '#2ecc71' : '#e74c3c'}`;
 
         // Auto hide message after 5 seconds
         setTimeout(() => {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Add delay animations for children
                     const children = entry.target.querySelectorAll('.animate-text, .animate-badge, .animate-card');
                     children.forEach((child, index) => {
-                        child.style.animationDelay = ${index * 0.2}s;
+                        child.style.animationDelay = `${index * 0.2}s`;
                         child.classList.add('animate__animated', 'animate__fadeInUp');
                     });
                 }
