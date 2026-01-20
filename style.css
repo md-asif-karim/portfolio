@@ -95,7 +95,6 @@ nav a:hover {
     font-size: 1.5rem;
     color: #ecf0f1;
     margin-bottom: 20px;
-    font-weight: normal;
 }
 
 .hero p {
@@ -517,6 +516,7 @@ footer {
         font-size: 2rem;
     }
 }
+
 
 
 
